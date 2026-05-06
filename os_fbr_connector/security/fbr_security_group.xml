@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record model="ir.module.category" id="module_category_fbr_connector">
+    <!-- Module Category -->
+    <record id="module_category_fbr_connector" model="ir.module.category">
         <field name="name">FBR Integrator</field>
         <field name="sequence">100</field>
     </record>
-    
-	<record id="group_fbr_user" model="res.groups">
-		<field name="name">FBR Posting</field>
-		<field name="category_id" ref="os_fbr_connector.module_category_fbr_connector" />
-	</record>
 
-	
-	
-	<!-- <record id="group_fbr_manager" model="res.groups">
-		<field name="name">FBR Manager</field>
-		<field name="category_id" ref="os_fbr_connector.module_category_fbr_connector" />
-		<field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
-		<field name="implied_ids" eval="[(4, ref('os_fbr_connector.group_fbr_user'))]"/>
-	</record> -->
+    <!-- Security Group -->
+    <record id="group_fbr_user" model="res.groups">
+        <field name="name">FBR Posting</field>
+    </record>
 
+    <!-- Optional Manager Group -->
+    <!--
+    <record id="group_fbr_manager" model="res.groups">
+        <field name="name">FBR Manager</field>
+        <field name="implied_ids" eval="[(4, ref('os_fbr_connector.group_fbr_user'))]"/>
+    </record>
+    -->
 </odoo>
