@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_sro_schedule_no_form" model="ir.ui.view">
+        <field name="name">FBR SRO Schedule No Form</field>
+        <field name="model">fbr.sro.schedule.no</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="SRO Schedule No"/>
+                        </group>
+                   
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fbr_sro_schedule_no_list" model="ir.ui.view">
+        <field name="name">FBR SRO Schedule No List</field>
+        <field name="model">fbr.sro.schedule.no</field>
+        <field name="arch" type="xml">
+
+             <list string="FBR SRO Schedule No" editable="bottom" default_order="sequence">
+            <field name="sequence" widget="handle"/>
+            <field name="name"/>
+             
+        </list>
+        </field>
+    </record>
+
+    <record id="action_fbr_sro_schedule_no" model="ir.actions.act_window">
+        <field name="name">FBR SRO Schedule No</field>
+        <field name="res_model">fbr.sro.schedule.no</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+   <!-- <menuitem id="menu_fbr_sro_schedule_no"
+              name="FBR SRO Schedule No"
+              parent="account.menu_finance_configuration"
+              action="action_fbr_sro_schedule_no"
+              sequence="101"/> -->
+</odoo>

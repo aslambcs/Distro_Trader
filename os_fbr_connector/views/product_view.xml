@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add FBR HS Code to variant grid inside product template -->
+    <record id="product_template_form_view_inherit_variant_fbr" model="ir.ui.view">
+        <field name="name">product.template.variant.fbr.hs.code</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="fbr_hs_code" invisible="product_variant_count &gt; 1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='categ_id']" position="before">
+                <field name="fbr_uom_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}" invisible="product_variant_count &gt; 1"/>
+            </xpath>
+
+             <xpath expr="//field[@name='invoice_policy']" position="after">
+                 <field name="fbr_scenario_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}" invisible="product_variant_count &gt; 1"/>
+                            <field name="fbr_sro_item_serial_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}" invisible="product_variant_count &gt; 1"/>
+                            <field name="fbr_sro_schedule_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}" invisible="product_variant_count &gt; 1"/>
+                            <field name="fix_notified_val_retail_price" invisible="product_variant_count &gt; 1"/>
+            </xpath>
+           
+        </field>
+    </record>
+
+    <!-- Add FBR HS Code to product variant form view -->
+    <record id="product_product_form_view_inherit_fbr" model="ir.ui.view">
+        <field name="name">product.product.form.fbr.hs.code</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+        <field name="arch" type="xml">
+                    <xpath expr="//field[@name='barcode']" position="after">
+                            <field name="fbr_hs_code"/>
+                                <field name="fbr_uom_id"  options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fbr_scenario_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fbr_sro_item_serial_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fbr_sro_schedule_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fix_notified_val_retail_price"/>
+                       
+            </xpath>
+
+            
+        </field>
+    </record>
+
+
+
+     <record id="product_product_normal_form_view_inherit_fbr" model="ir.ui.view">
+        <field name="name">product.product.normal.form.fbr</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+
+         <xpath expr="//field[@name='barcode']" position="after">
+                <field name="fbr_hs_code" />
+            </xpath>
+
+            <xpath expr="//field[@name='categ_id']" position="before">
+                <field name="fbr_uom_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+            </xpath>
+
+
+            <xpath expr="//field[@name='invoice_policy']" position="after">
+               
+               
+                            <field name="fbr_scenario_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fbr_sro_item_serial_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fbr_sro_schedule_no_id" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                            <field name="fix_notified_val_retail_price" options="{'no_open': True, 'no_create': True, 'no_create_edit':True}"/>
+                   
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

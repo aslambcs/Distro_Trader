@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_scenario_form" model="ir.ui.view">
+        <field name="name">fbr.scenario.form</field>
+        <field name="model">fbr.scenario</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                    <group>
+                        <field name="code" placeholder="SN001"/>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="sal_pur_cotton_ginners"/>
+                    </group>
+                   
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fbr_scenario_list" model="ir.ui.view">
+        <field name="name">fbr.scenario.list</field>
+        <field name="model">fbr.scenario</field>
+        <field name="arch" type="xml">
+
+             <list string="FBR Scenarios" editable="bottom" default_order="sequence">
+            <field name="sequence" widget="handle"/>
+             <field name="code"/>
+            <field name="name"/>
+             <field name="sal_pur_cotton_ginners"/>
+        </list>
+        </field>
+    </record>
+
+    <record id="action_fbr_scenario" model="ir.actions.act_window">
+        <field name="name">FBR Scenarios</field>
+        <field name="res_model">fbr.scenario</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

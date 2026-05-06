@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="sh_account_fbr_configuration" model="ir.ui.view">
+    <field name="name">account.fbr.configuration</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="account.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//block[@name='fiscal_localization_setting_container']" position="after">
+            <block title="FBR Sandbox Environment" name="fbr_sandbox_config" id="fbr_sandbox_config">
+                <!-- <setting string="FBR Sandbox Environment">
+                    <field name="fbr_api_mode" help="Choose whether to connect to the FBR Sandbox environment."/>
+                </setting> -->
+                <setting string="FBR API Security Token (Sandbox)">
+                    <field name="fbr_api_token_sandbox" help="Security token provided by PRAL/FBR. Valid for 5 years."/>
+                </setting>
+                <setting string="Post Invoice URL">
+                    <field name="fbr_post_invoice_sandbox_url"/>
+                </setting>
+                <setting string="Validate Invoice URL">
+                    <field name="fbr_validate_invoice_sandbox_url"/>
+                </setting>
+            </block>
+
+             <block title="FBR Production Environment" name="fbr_production_config" id="fbr_production_config">
+                <!-- <setting string="FBR Production Environment">
+                    <field name="fbr_api_mode" help="Choose whether to connect to the FBR Production environment."/>
+                </setting> -->
+                <setting string="FBR API Security Token (Production)">
+                    <field name="fbr_api_token_production" help="Security token provided by PRAL/FBR. Valid for 5 years."/>
+                </setting>
+                <setting string="Post Invoice URL (Production)">
+                    <field name="fbr_post_invoice_production_url"/>
+                </setting>
+                
+            </block>
+        </xpath>
+
+
+      
+    </field>
+</record>
+</odoo>

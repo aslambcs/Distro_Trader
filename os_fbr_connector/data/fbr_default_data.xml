@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- data/fbr_data.xml -->
+<odoo noupdate="1">
+
+
+
+
+     <!-- Data for FBR Reasons -->
+    <record id="fbr_reason_cancellation_supply" model="fbr.reason">
+        <field name="name">Cancellation of supply</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="fbr_reason_return_goods" model="fbr.reason">
+        <field name="name">Return of goods</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="fbr_reason_change_nature_supply" model="fbr.reason">
+        <field name="name">Change in nature of supply</field>
+        <field name="sequence">3</field>
+    </record>
+
+    <record id="fbr_reason_change_value_supply" model="fbr.reason">
+        <field name="name">change in value of supply</field>
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="fbr_reason_change_amount_tax" model="fbr.reason">
+        <field name="name">Change in amount of tax</field>
+        <field name="sequence">5</field>
+    </record>
+
+    <record id="fbr_reason_others" model="fbr.reason">
+        <field name="name">Others</field>
+        <field name="sequence">6</field>
+    </record>
+
+    <record id="fbr_reason_adjustment_steel_melters" model="fbr.reason">
+        <field name="name">Adjustment given to Steel Melters</field>
+        <field name="sequence">7</field>
+    </record>
+
+
+    <!-- Data for fbr.sro.schedule.no model -->
+    <record id="fbr_sro_schedule_fifth" model="fbr.sro.schedule.no">
+        <field name="name">FIFTH SCHEDULE</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="fbr_sro_schedule_297" model="fbr.sro.schedule.no">
+        <field name="name">297(I)/2023-Table-II</field>
+        <field name="sequence">2</field>
+    </record>
+    <record id="fbr_sro_schedule_6th" model="fbr.sro.schedule.no">
+        <field name="name">6th Schd Table I</field>
+        <field name="sequence">3</field>
+    </record>
+    <record id="fbr_sro_schedule_eighth" model="fbr.sro.schedule.no">
+        <field name="name">EIGHTH SCHEDULE Table 1</field>
+        <field name="sequence">4</field>
+    </record>
+
+
+
+
+    <!-- Data for FBR SRO Item Serial Number -->
+    <record id="sro_item_serial_1i" model="fbr.sro.item.serial.no">
+        <field name="name">1(i)</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="sro_item_serial_1" model="fbr.sro.item.serial.no">
+        <field name="name">1</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="sro_item_serial_100" model="fbr.sro.item.serial.no">
+        <field name="name">100</field>
+        <field name="sequence">3</field>
+    </record>
+
+    <record id="sro_item_serial_47" model="fbr.sro.item.serial.no">
+        <field name="name">47</field>
+        <field name="sequence">4</field>
+    </record>
+
+
+</odoo>

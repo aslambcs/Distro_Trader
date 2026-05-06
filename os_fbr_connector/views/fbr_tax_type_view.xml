@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_tax_type_form" model="ir.ui.view">
+        <field name="name">fbr.tax.type.form</field>
+        <field name="model">fbr.tax.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="FBR Tax Type"/>
+                        </group>
+                   
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fbr_tax_type_list" model="ir.ui.view">
+        <field name="name">fbr.tax.type.list</field>
+        <field name="model">fbr.tax.type</field>
+        <field name="arch" type="xml">
+
+             <list string="FBR Tax Type" editable="bottom" default_order="name">
+            <field name="name"/>
+             
+        </list>
+        </field>
+    </record>
+
+    <record id="action_fbr_tax_type" model="ir.actions.act_window">
+        <field name="name">FBR Tax Type</field>
+        <field name="res_model">fbr.tax.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+</odoo>

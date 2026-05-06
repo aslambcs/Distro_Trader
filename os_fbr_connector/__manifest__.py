@@ -1,0 +1,46 @@
+{
+    'name': 'FBR Digital Invoicing Connector (DI)',
+    'version': '18.0.3.0.6',
+    'summary': 'Full integration with FBR Digital Invoicing API (Validate & Post).',
+    'description': """
+        Update on Extra Tax Value:
+        - The extra tax value is now formatted based on the sale type.
+        - Button only visible in customer invoice and refund.
+    """,
+    'author': 'Usman Farzand',
+    'company': 'Odoo Specialist',
+    'maintainer': 'Usman Farzand',
+    'email': 'usman@odoospecialist.com',
+    'website': 'https://www.odoospecialist.com',
+    'category': 'Accounting/Localizations/EDI',
+    'depends': [
+        'account','stock','product','contacts','stock_delivery', 'uom','account_invoice_fixed_discount',
+        'base', 
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'security/fbr_security_group.xml',
+        'data/fbr_default_data.xml',
+        'data/fbr_scenario_default_data.xml',
+        'data/fbr_tax_label_default_data.xml',
+        'data/fbr_tax_type_default_data.xml',
+        'data/fbr_uom_default_data.xml',
+        'views/res_config_settings_views.xml',
+        'views/account_move_view.xml',
+        'views/account_move_reversal_view.xml',
+        'views/res_partner_view.xml',
+        'views/fbr_scenario_view.xml',
+        'views/product_view.xml',
+        'views/fbr_reason_view.xml',
+        'views/fbr_sro_item_serial_no_view.xml',
+        'views/fbr_sro_schedule_no_view.xml',
+        'views/fbr_uom_view.xml',
+        'views/fbr_tax_label_view.xml',
+        'views/fbr_tax_type_view.xml',
+        'views/account_tax_view.xml',
+        'views/menu_view.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

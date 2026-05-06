@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fbr_tax_label_form" model="ir.ui.view">
+        <field name="name">fbr.tax.label.form</field>
+        <field name="model">fbr.tax.label</field>
+       <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="FBR Tax Label"/>
+                        </group>
+                   
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fbr_tax_label_list" model="ir.ui.view">
+        <field name="name">fbr.tax.label.list</field>
+        <field name="model">fbr.tax.label</field>
+       <field name="arch" type="xml">
+
+             <list string="FBR Tax Label" editable="bottom" default_order="name">
+            <field name="name"/>
+             
+        </list>
+        </field>
+    </record>
+
+    <record id="action_fbr_tax_label" model="ir.actions.act_window">
+        <field name="name">FBR Tax Label</field>
+        <field name="res_model">fbr.tax.label</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+</odoo>

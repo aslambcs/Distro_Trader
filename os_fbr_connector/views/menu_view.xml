@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_fbr_scenario"
+        name="FBR Scenarios"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_scenario"
+    sequence="101"/>
+
+  
+
+
+    <menuitem id="menu_fbr_sro_schedule_no"
+        name="FBR SRO Schedule No"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_sro_schedule_no"
+    sequence="102"/>
+
+
+    <menuitem id="menu_fbr_sro_item_serial_no"
+        name="FBR SRO Item Serial No"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_sro_item_serial_no"
+    sequence="103"/>
+
+    <menuitem id="menu_fbr_reason"
+        name="FBR Reason"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_reason"
+    sequence="104"/>
+
+    
+
+        
+    <menuitem id="menu_fbr_uom"
+        name="FBR UOM"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_uom"
+    sequence="105"/>
+
+       <menuitem id="menu_fbr_tax_label"
+        name="FBR Tax Label"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_tax_label"
+    sequence="106"/>
+
+       <menuitem id="menu_fbr_tax_type"
+        name="FBR Tax Type"
+        parent="account.menu_finance_configuration"
+        action="action_fbr_tax_type"
+    sequence="107"/>
+</odoo>

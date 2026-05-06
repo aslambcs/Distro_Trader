@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- data/fbr_data.xml -->
+<odoo noupdate="1">
+  <record id="fbr_tax_type_further" model="fbr.tax.type">
+        <field name="name">furtherTax</field>
+    </record>
+    <record id="fbr_tax_type_extra" model="fbr.tax.type">
+        <field name="name">extraTax</field>
+    </record>
+    <record id="fbr_tax_type_withheld" model="fbr.tax.type">
+        <field name="name">salesTaxWithheldAtSource</field>
+    </record>
+    <record id="fbr_tax_type_applicable" model="fbr.tax.type">
+        <field name="name">salesTaxApplicable</field>
+    </record>
+</odoo>

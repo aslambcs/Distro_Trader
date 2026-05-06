@@ -1,0 +1,13 @@
+<odoo>
+    <record id="res_partner_form_fbr_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.fbr.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="partner_cnic_no"/>
+                <field name="fbr_registration_type"/>
+            </field>
+        </field>
+    </record>
+</odoo>

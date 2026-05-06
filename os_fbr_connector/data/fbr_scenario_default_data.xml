@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- data/fbr_data.xml -->
+<odoo noupdate="1">
+
+
+ <!-- Data for FBR Scenarios -->
+    <record id="fbr_scenario_sn001" model="fbr.scenario">
+        <field name="code">SN001</field>
+        <field name="name">Goods at standard rate to registered buyers</field>
+        <field name="sal_pur_cotton_ginners">Goods at standard rate (default)</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="fbr_scenario_sn002" model="fbr.scenario">
+        <field name="code">SN002</field>
+        <field name="name">Goods at standard rate to unregistered buyers</field>
+        <field name="sal_pur_cotton_ginners">Goods at standard rate (default)</field>
+        <field name="sequence">2</field>
+    </record>
+    <record id="fbr_scenario_sn003" model="fbr.scenario">
+        <field name="code">SN003</field>
+        <field name="name">Sale of Steel (Melted and Re-Rolled)</field>
+        <field name="sal_pur_cotton_ginners">Steel Melting and re-rolling</field>
+        <field name="sequence">3</field>
+    </record>
+    <record id="fbr_scenario_sn004" model="fbr.scenario">
+        <field name="code">SN004</field>
+        <field name="name">Sale by Ship Breakers</field>
+        <field name="sal_pur_cotton_ginners">Ship breaking</field>
+        <field name="sequence">4</field>
+    </record>
+    <record id="fbr_scenario_sn005" model="fbr.scenario">
+        <field name="code">SN005</field>
+        <field name="name">Reduced rate sale</field>
+        <field name="sal_pur_cotton_ginners">Goods at Reduced Rate</field>
+        <field name="sequence">5</field>
+    </record>
+    <record id="fbr_scenario_sn006" model="fbr.scenario">
+        <field name="code">SN006</field>
+        <field name="name">Exempt goods sale</field>
+        <field name="sal_pur_cotton_ginners">Exempt goods</field>
+        <field name="sequence">6</field>
+    </record>
+    <record id="fbr_scenario_sn007" model="fbr.scenario">
+        <field name="code">SN007</field>
+        <field name="name">Zero rated sale</field>
+        <field name="sal_pur_cotton_ginners">Goods at zero-rate</field>
+        <field name="sequence">7</field>
+    </record>
+    <record id="fbr_scenario_sn008" model="fbr.scenario">
+        <field name="code">SN008</field>
+        <field name="name">Sale of 3rd schedule goods</field>
+        <field name="sal_pur_cotton_ginners">3rd Schedule Goods</field>
+        <field name="sequence">8</field>
+    </record>
+    <record id="fbr_scenario_sn009" model="fbr.scenario">
+        <field name="code">SN009</field>
+        <field name="name">Cotton Spinners purchase from Cotton Ginners (Textile Sector)</field>
+        <field name="sal_pur_cotton_ginners">Cotton Ginners</field>
+        <field name="sequence">9</field>
+    </record>
+    <record id="fbr_scenario_sn010" model="fbr.scenario">
+        <field name="code">SN010</field>
+        <field name="name">Telecom services rendered or provided</field>
+        <field name="sal_pur_cotton_ginners">Telecommunication services</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="fbr_scenario_sn011" model="fbr.scenario">
+        <field name="code">SN011</field>
+        <field name="name">Toll Manufacturing sale by Steel sector</field>
+        <field name="sal_pur_cotton_ginners">Toll Manufacturing</field>
+        <field name="sequence">11</field>
+    </record>
+    <record id="fbr_scenario_sn012" model="fbr.scenario">
+        <field name="code">SN012</field>
+        <field name="name">Sale of Petroleum products</field>
+        <field name="sal_pur_cotton_ginners">Petroleum Products</field>
+        <field name="sequence">12</field>
+    </record>
+    <record id="fbr_scenario_sn013" model="fbr.scenario">
+        <field name="code">SN013</field>
+        <field name="name">Electricity Supply to Retailers</field>
+        <field name="sal_pur_cotton_ginners">Electricity Supply to Retailers</field>
+        <field name="sequence">13</field>
+    </record>
+    <record id="fbr_scenario_sn014" model="fbr.scenario">
+        <field name="code">SN014</field>
+        <field name="name">Sale of Gas to CNG stations</field>
+        <field name="sal_pur_cotton_ginners">Gas to CNG stations</field>
+        <field name="sequence">14</field>
+    </record>
+    <record id="fbr_scenario_sn015" model="fbr.scenario">
+        <field name="code">SN015</field>
+        <field name="name">Sale of mobile phones</field>
+        <field name="sal_pur_cotton_ginners">Mobile Phones</field>
+        <field name="sequence">15</field>
+    </record>
+    <record id="fbr_scenario_sn016" model="fbr.scenario">
+        <field name="code">SN016</field>
+        <field name="name">Processing / Conversion of Goods</field>
+        <field name="sal_pur_cotton_ginners">Processing/Conversion of Goods</field>
+        <field name="sequence">16</field>
+    </record>
+    <record id="fbr_scenario_sn017" model="fbr.scenario">
+        <field name="code">SN017</field>
+        <field name="name">Sale of Goods where FED is charged in ST mode</field>
+        <field name="sal_pur_cotton_ginners">Goods (FED in ST Mode)</field>
+        <field name="sequence">17</field>
+    </record>
+    <record id="fbr_scenario_sn018" model="fbr.scenario">
+        <field name="code">SN018</field>
+        <field name="name">Services rendered or provided where FED is charged in ST mode</field>
+        <field name="sal_pur_cotton_ginners">Services (FED in ST Mode)</field>
+        <field name="sequence">18</field>
+    </record>
+    <record id="fbr_scenario_sn019" model="fbr.scenario">
+        <field name="code">SN019</field>
+        <field name="name">Services rendered or provided</field>
+        <field name="sal_pur_cotton_ginners">Services</field>
+        <field name="sequence">19</field>
+    </record>
+    <record id="fbr_scenario_sn020" model="fbr.scenario">
+        <field name="code">SN020</field>
+        <field name="name">Sale of Electric Vehicles</field>
+        <field name="sal_pur_cotton_ginners">Electric Vehicle</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="fbr_scenario_sn021" model="fbr.scenario">
+        <field name="code">SN021</field>
+        <field name="name">Sale of Cement /Concrete Block</field>
+        <field name="sal_pur_cotton_ginners">Cement /Concrete Block</field>
+        <field name="sequence">21</field>
+    </record>
+    <record id="fbr_scenario_sn022" model="fbr.scenario">
+        <field name="code">SN022</field>
+        <field name="name">Sale of Potassium Chlorate</field>
+        <field name="sal_pur_cotton_ginners">Potassium Chlorate</field>
+        <field name="sequence">22</field>
+    </record>
+    <record id="fbr_scenario_sn023" model="fbr.scenario">
+        <field name="code">SN023</field>
+        <field name="name">Sale of CNG</field>
+        <field name="sal_pur_cotton_ginners">CNG Sales</field>
+        <field name="sequence">23</field>
+    </record>
+    <record id="fbr_scenario_sn024" model="fbr.scenario">
+        <field name="code">SN024</field>
+        <field name="name">Goods sold that are listed in SRO 297(1)/2023</field>
+        <field name="sal_pur_cotton_ginners">Goods as per SRO.297(|)/2023</field>
+        <field name="sequence">24</field>
+    </record>
+    <record id="fbr_scenario_sn025" model="fbr.scenario">
+        <field name="code">SN025</field>
+        <field name="name">Drugs sold at fixed ST rate under serial 81 of Eighth Schedule Table 1</field>
+        <field name="sal_pur_cotton_ginners">Non-Adjustable Supplies</field>
+        <field name="sequence">25</field>
+    </record>
+    <record id="fbr_scenario_sn026" model="fbr.scenario">
+        <field name="code">SN026</field>
+        <field name="name">Sale to End Consumer by retailers</field>
+        <field name="sal_pur_cotton_ginners">Goods at Standard Rate (default)</field>
+        <field name="sequence">26</field>
+    </record>
+    <record id="fbr_scenario_sn027" model="fbr.scenario">
+        <field name="code">SN027</field>
+        <field name="name">Sale to End Consumer by retailers</field>
+        <field name="sal_pur_cotton_ginners">3rd Schedule Goods</field>
+        <field name="sequence">27</field>
+    </record>
+    <record id="fbr_scenario_sn028" model="fbr.scenario">
+        <field name="code">SN028</field>
+        <field name="name">Sale to End Consumer by retailers</field>
+        <field name="sal_pur_cotton_ginners">Goods at Reduced Rate</field>
+        <field name="sequence">28</field>
+    </record>
+
+
+
+</odoo>

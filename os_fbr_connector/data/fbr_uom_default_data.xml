@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- data/fbr_data.xml -->
+<odoo noupdate="1">
+
+
+
+
+
+	    <!-- Data for FBR Unit of Measure (fbr.uom) with sequential numbering -->
+    <record id="fbr_uom_1000_kwh" model="fbr.uom">
+        <field name="name">1000 kWh</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="fbr_uom_40kg" model="fbr.uom">
+        <field name="name">40KG</field>
+        <field name="sequence">2</field>
+    </record>
+    <record id="fbr_uom_bag" model="fbr.uom">
+        <field name="name">Bag</field>
+        <field name="sequence">3</field>
+    </record>
+    <record id="fbr_uom_barrels" model="fbr.uom">
+        <field name="name">Barrels</field>
+        <field name="sequence">4</field>
+    </record>
+    <record id="fbr_uom_bill_of_lading" model="fbr.uom">
+        <field name="name">Bill of lading</field>
+        <field name="sequence">5</field>
+    </record>
+    <record id="fbr_uom_carat" model="fbr.uom">
+        <field name="name">Carat</field>
+        <field name="sequence">6</field>
+    </record>
+    <record id="fbr_uom_cubic_metre" model="fbr.uom">
+        <field name="name">Cubic Metre</field>
+        <field name="sequence">7</field>
+    </record>
+    <record id="fbr_uom_dozen" model="fbr.uom">
+        <field name="name">Dozen</field>
+        <field name="sequence">8</field>
+    </record>
+    <record id="fbr_uom_foot" model="fbr.uom">
+        <field name="name">Foot</field>
+        <field name="sequence">9</field>
+    </record>
+    <record id="fbr_uom_gallon" model="fbr.uom">
+        <field name="name">Gallon</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="fbr_uom_gram" model="fbr.uom">
+        <field name="name">Gram</field>
+        <field name="sequence">11</field>
+    </record>
+    <record id="fbr_uom_kg" model="fbr.uom">
+        <field name="name">KG</field>
+        <field name="sequence">12</field>
+    </record>
+    <record id="fbr_uom_kwh" model="fbr.uom">
+        <field name="name">KWH</field>
+        <field name="sequence">13</field>
+    </record>
+    <record id="fbr_uom_kilogram" model="fbr.uom">
+        <field name="name">Kilogram</field>
+        <field name="sequence">14</field>
+    </record>
+    <record id="fbr_uom_liter" model="fbr.uom">
+        <field name="name">Liter</field>
+        <field name="sequence">15</field>
+    </record>
+    <record id="fbr_uom_mmbtu" model="fbr.uom">
+        <field name="name">MMBTU</field>
+        <field name="sequence">16</field>
+    </record>
+    <record id="fbr_uom_mt" model="fbr.uom">
+        <field name="name">MT</field>
+        <field name="sequence">17</field>
+    </record>
+    <record id="fbr_uom_mega_watt" model="fbr.uom">
+        <field name="name">Mega Watt</field>
+        <field name="sequence">18</field>
+    </record>
+    <record id="fbr_uom_meter" model="fbr.uom">
+        <field name="name">Meter</field>
+        <field name="sequence">19</field>
+    </record>
+    <record id="fbr_uom_no" model="fbr.uom">
+        <field name="name">NO</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="fbr_uom_numbers" model="fbr.uom">
+        <field name="name">Numbers, pieces, units</field>
+        <field name="sequence">21</field>
+    </record>
+    <record id="fbr_uom_others" model="fbr.uom">
+        <field name="name">Others</field>
+        <field name="sequence">22</field>
+    </record>
+    <record id="fbr_uom_packs" model="fbr.uom">
+        <field name="name">Packs</field>
+        <field name="sequence">23</field>
+    </record>
+    <record id="fbr_uom_pair" model="fbr.uom">
+        <field name="name">Pair</field>
+        <field name="sequence">24</field>
+    </record>
+    <record id="fbr_uom_pound" model="fbr.uom">
+        <field name="name">Pound</field>
+        <field name="sequence">25</field>
+    </record>
+    <record id="fbr_uom_set" model="fbr.uom">
+        <field name="name">SET</field>
+        <field name="sequence">26</field>
+    </record>
+    <record id="fbr_uom_sqy" model="fbr.uom">
+        <field name="name">SqY</field>
+        <field name="sequence">27</field>
+    </record>
+    <record id="fbr_uom_square_foot" model="fbr.uom">
+        <field name="name">Square Foot</field>
+        <field name="sequence">28</field>
+    </record>
+    <record id="fbr_uom_square_metre" model="fbr.uom">
+        <field name="name">Square Metre</field>
+        <field name="sequence">29</field>
+    </record>
+    <record id="fbr_uom_thousand_unit" model="fbr.uom">
+        <field name="name">Thousand Unit</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="fbr_uom_timber_logs" model="fbr.uom">
+        <field name="name">Timber Logs</field>
+        <field name="sequence">31</field>
+    </record>
+
+
+</odoo>

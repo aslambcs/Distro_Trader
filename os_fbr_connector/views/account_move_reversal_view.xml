@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+
+
+     <record id="view_account_move_reversal_fbr_reason" model="ir.ui.view">
+        <field name="name">account.move.reversal.form.fbr.reason</field>
+        <field name="model">account.move.reversal</field>
+        <field name="inherit_id" ref="account.view_account_move_reversal"/>
+        <field name="arch" type="xml">
+            <!-- Find the existing 'reason' field and add our new field after it -->
+            <xpath expr="//field[@name='reason']" position="after">
+                <!--
+                    This field is only relevant for customer invoices.
+                    - 'invisible' hides it for other move types (like vendor bills).
+                    - 'required' makes it mandatory when reversing a customer invoice.
+                -->
+                <field name="fbr_reason_id"
+                       invisible="move_type != 'out_invoice'"
+                       required="move_type == 'out_invoice'"
+                       options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

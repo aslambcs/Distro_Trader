@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fbr_scenario,access.fbr.scenario,model_fbr_scenario,base.group_user,1,1,1,1
+access_fbr.service,access.fbr.service,model_fbr_service,base.group_user,1,1,1,1
+access_fbr.fbr_sro_item_serial_no,access.fbr.fbr.sro.item.serial.no,model_fbr_sro_item_serial_no,base.group_user,1,1,1,1
+access_fbr.reason,access.fbr.reason,model_fbr_reason,base.group_user,1,1,1,1
+access_fbr.uom,access.fbr.uom,model_fbr_uom,base.group_user,1,1,1,1
+access_fbr.fbr_sro_schedule_no,access.fbr.sro.schedule.no,model_fbr_sro_schedule_no,base.group_user,1,1,1,1
+access_fbr_tax_label,access.fbr.tax.label,model_fbr_tax_label,base.group_user,1,1,1,1
+access_fbr_tax_type,access.fbr.tax.type,model_fbr_tax_type,base.group_user,1,1,1,1
