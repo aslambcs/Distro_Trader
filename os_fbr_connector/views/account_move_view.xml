@@ -106,7 +106,6 @@
 
     <record model="ir.actions.server" id="action_post_invoice_to_fbr_sandbox">
         <field name="name">Post to FBR (Sandbox)</field>
-        <field name="groups_id" eval="[(4, ref('os_fbr_connector.group_fbr_user'))]"/>
         <field name="model_id" ref="account.model_account_move"/>
         <field name="binding_model_id" ref="account.model_account_move" />
         <field name="binding_view_types">list</field>
@@ -118,7 +117,6 @@ action = records.action_post_invoice_to_fbr_sandbox()
 
     <record model="ir.actions.server" id="action_validate_invoice_fbr_sandbox">
         <field name="name">Validate with FBR (Sandbox)</field>
-        <field name="groups_id" eval="[(4, ref('os_fbr_connector.group_fbr_user'))]"/>
         <field name="model_id" ref="account.model_account_move"/>
         <field name="binding_model_id" ref="account.model_account_move" />
         <field name="binding_view_types">list</field>
@@ -130,7 +128,6 @@ action = records.action_validate_invoice_fbr_sandbox()
 
     <record model="ir.actions.server" id="action_post_invoice_to_fbr_production">
         <field name="name">Post to FBR (Production)</field>
-        <field name="groups_id" eval="[(4, ref('os_fbr_connector.group_fbr_user'))]"/>
         <field name="model_id" ref="account.model_account_move"/>
         <field name="binding_model_id" ref="account.model_account_move" />
         <field name="binding_view_types">list</field>
