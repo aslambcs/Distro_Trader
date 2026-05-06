@@ -1,6 +1,6 @@
 {
     'name': 'FBR Digital Invoicing Connector (DI)',
-    'version': '18.0.3.0.6',
+    'version': '19.0.3.0.6',
     'summary': 'Full integration with FBR Digital Invoicing API (Validate & Post).',
     'description': """
         Update on Extra Tax Value:
