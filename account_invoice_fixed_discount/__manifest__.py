@@ -7,7 +7,7 @@
     "version": "18.0.1.0.0",
     "category": "Accounting & Finance",
     "website": "https://github.com/OCA/account-invoicing",
-    "author": "ForgeFlow, Odoo Community Association (OCA)",
+    "author": "muhammad asif",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
