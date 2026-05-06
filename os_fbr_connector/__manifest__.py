@@ -7,11 +7,11 @@
         - The extra tax value is now formatted based on the sale type.
         - Button only visible in customer invoice and refund.
     """,
-    'author': 'Usman Farzand',
+    'author': 'Muhammad Asif',
     'company': 'Odoo Specialist',
-    'maintainer': 'Usman Farzand',
-    'email': 'usman@odoospecialist.com',
-    'website': 'https://www.odoospecialist.com',
+    'maintainer': 'Muhammad Asif',
+    'email': 'muhammad.asif@odoospecialist.com',
+    'website': 'alaricsoft.com',
     'category': 'Accounting/Localizations/EDI',
     'depends': [
         'account','stock','product','contacts','stock_delivery', 'uom','account_invoice_fixed_discount',
